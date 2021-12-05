@@ -16,11 +16,7 @@
             </ul>
             <div class="collapse navbar-collapse justify-content-end">
                 <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="collapse" href="#collapseTableSettings" role="button" aria-expanded="false" aria-controls="collapseTableSettings">
-                            <i class="bi bi-gear"></i> Settings
-                        </a>
-                    </li> 
+                    <sidebar-link playerName="TableSettings" iconClass="gear" />
                     <li class="nav-item">
                         <a href="#" class="nav-link resetTable"><i class="bi bi-arrow-clockwise"></i> Reset</a>
                     </li>
@@ -30,7 +26,14 @@
     </nav>
 </template>
 <script>
-export default {}
+import SidebarLink from '../../components/SidebarLink.vue'
+
+export default {
+    name: "AppSidebar",
+    components: {
+        "sidebar-link": SidebarLink,
+    }
+}
 </script>
 <style>
 </style>

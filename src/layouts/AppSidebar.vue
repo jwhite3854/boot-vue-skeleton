@@ -8,7 +8,7 @@
                     </a>
                 </div>
                 <ul class="nav"> 
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a href="#" class="nav-link collapseAllSettings" role="button" aria-expanded="false">
                             <i class="bi bi-bank"></i> 
                             <p>Table</p>
