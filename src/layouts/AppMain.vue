@@ -1,27 +1,28 @@
 <template>
-    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-            <h1 class="h2">Dashboard</h1>
-            <div class="btn-toolbar mb-2 mb-md-0">
-                <div class="btn-group me-2">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
-                </div>
-            </div>
-        </div>
-
-        <div>
-       
-        </div>
-
-        <h2>Section title</h2>
-        <div>
-       
-        </div>
-    </main>
+    <div class="main-panel">
+        <app-navbar></app-navbar>
+        <app-content></app-content>
+        <app-footer></app-footer>
+    </div>
 </template>
 <script>
-export default {}
+import Navbar from './main-panel/NavBar.vue'
+import Content from './main-panel/Content.vue'
+import Footer from './main-panel/Footer.vue'
+
+export default {
+    name: "AppMain",
+    components: {
+        "app-navbar": Navbar,
+        "app-content": Content,
+        "app-footer": Footer
+    },
+    data: function() {
+        return {
+            
+        }
+    },
+}
 </script>
 <style>
 </style>
